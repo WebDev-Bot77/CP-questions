@@ -1,6 +1,16 @@
+from collections import OrderedDict 
+def removeDupWithOrder(seg): 
+    return("".join(OrderedDict.fromkeys(seg)))
 def merge_the_tools(string, k):
     # your code goes here
+    l = len(string)
 
+    sl = int(l/k)
+    j = 0
+    for i in range(sl):
+        seg = string[i+j:i+k+j]
+        j = j + k-1
+        print(removeDupWithOrder(seg))
         
         
     
