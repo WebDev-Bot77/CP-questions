@@ -1,1 +1,21 @@
+import itertools 
 
+def minion_game(string):
+    # your code goes here
+    Stuart = 0
+    Kevin = 0
+    length = len(string)
+    for i in range(length):
+        if (string[i] in ['A','E','I','O','U']):
+            Kevin = Kevin + (length - i)
+        else:
+            Stuart = Stuart + (length - i)
+    if Kevin > Stuart :
+        print('Kevin', Kevin)
+    elif Kevin == Stuart:
+        print("Draw")
+    else:
+        print('Stuart', Stuart)
+if __name__ == '__main__':
+    s = input()
+    minion_game(s)
