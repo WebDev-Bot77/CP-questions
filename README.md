@@ -1,5 +1,5 @@
 # CP-questions
-This repository includes some good competitive programming questions 
+This repository includes some good coding questions 
 you just need to follow following steps
 # 1. Fork repository
 # 2. Clone it
